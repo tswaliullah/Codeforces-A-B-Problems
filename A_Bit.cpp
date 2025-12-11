@@ -6,20 +6,22 @@ int main()
     int t;
     cin >> t;
 
+    int total = 0;
     while (t--)
     {
         string s;
         cin >> s;
 
-        int len = s.length();
-        if (len > 10)
+        if (s == "++X")
         {
-            cout << s[0] << len - 2 << s[len-1] << endl;
+            total++;
         }
         else
         {
-            cout << s << endl;
+            total--;
         }
+
+        cout << total;
     }
 
     return 0;
