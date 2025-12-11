@@ -12,7 +12,7 @@ int main()
         string s;
         cin >> s;
 
-        if (s == "++X")
+        if (s == "++X" || s == "X++")
         {
             total++;
         }
@@ -20,8 +20,7 @@ int main()
         {
             total--;
         }
-
-        cout << total;
     }
+    cout << total;
     return 0;
 }
